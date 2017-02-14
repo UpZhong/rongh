@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>成都容海信息技术有限责任公司</title>
+<link rel="stylesheet" href="css/zreset.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/zindex.css">
+<link rel="stylesheet" href="css/zdiffer.css">
+<link rel="stylesheet" type="text/css" href="css/zieindex.css">
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/browserdetect.js"></script>
+<script type="text/javascript" src="js/zfullPage.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/zindex.js"></script>
+</head>
+<body>
+
+<div id="zmodern">
+	<div id="pageContain">
+		<div class="page page1 current" >
+			<div class="contain">
+				<!-- 首页banner图 -->
+	            <div class="swiper-container1">
+	                <div class="swiper-wrapper">
+	                    <div class="swiper-slide" style="background: url(images/shouye1.jpg) no-repeat center center;background-size: cover ;">
+	                    	<div class="p1-1">
+	                    		<img class="p1-pic1" src="images/z-p1-bg-sj1.png" alt="">
+	                    		<img src="images/z-rongh.png" alt="" class="p1-pic2">
+	                    		<img src="images/z-mga.png" alt="" class="p1-pic3">
+	                    		<img class="p1-p1-pic3" src="images/z-p1-xxdql.png" alt="">
+	                    	</div>
+	                    	<p class="news">
+				                <span class="news_bg"></span>
+				                <img src="images/news_arrow.png">
+				                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+				            </p>
+	                    </div>
+	                    <div class="swiper-slide" style="background: url(images/shouye2.jpg) no-repeat center center;background-size: cover ;">
+	                        <div class="z-p1-p2-wz">
+			                	<img class="z-p1-p2-wz1" src="images/z-p1-p2-wz1.png">
+			                	<img class="z-p1-p2-wz2" src="images/z-p1-p2-wz2.png">
+			                </div>
+			                <p class="news">
+				                <span class="news_bg"></span>
+				                <img src="images/news_arrow.png">
+				                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+				            </p>
+	                    </div>
+	                    <div class="swiper-slide" style="background: url(images/shouye3.jpg) no-repeat top center;background-size: cover ;">
+	                    	<div class="z-p1-p3-wz">
+			                	<img class="z-p1-p3-wz1" src="images/shouye3-con1.png">
+								<img class="z-p1-p3-wz2" src="images/shouye3-hj.png">
+								<img class="z-p1-p3-wz3" src="images/shouye3-wz.png">
+								<img class="z-p1-p3-wz4" src="images/shopuye3-hand.png">
+			                </div>
+			                <p class="news">
+				                <span class="news_bg"></span>
+				                <img src="images/news_arrow.png">
+				                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+				            </p>
+	                    </div>
+	                </div>
+	                <div class="swiper-pagination pagination_page1"></div>
+	                <div class="swiper-button-prev page1_prev"></div>
+	                <div class="swiper-button-next page1_next"></div>
+	            </div>
+	            <script type="text/javascript">
+	                var swiper = new Swiper(".swiper-container1", {
+	                    paginationType: 'fraction',
+	                    prevButton: '.swiper-button-prev',
+	                    nextButton: '.swiper-button-next',
+	                    loop: true,
+	                    autoplay:3000,
+	                    speed:500,
+	                    onSlideChangeStart: function(swiper){
+					      switch(swiper.activeIndex){
+					      	case 0:
+					      		$(".p1-pic2").removeClass("active");
+					      		$(".p1-pic3").removeClass("active");
+					      		$(".p1-p1-pic3").removeClass("active");
+					      		$(".z-p1-p2-wz1").removeClass("active");
+					      		$(".z-p1-p2-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz2").addClass("active");
+					      		$(".z-p1-p3-wz3").addClass("active");
+					      		$(".z-p1-p3-wz4").addClass("active");
+					      		break;
+					      	case 1:
+					      		$(".p1-pic2").addClass("active");
+					      		$(".p1-pic3").addClass("active");
+					      		$(".p1-p1-pic3").addClass("active");
+					      		$(".z-p1-p2-wz1").removeClass("active");
+					      		$(".z-p1-p2-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz3").removeClass("active");
+					      		$(".z-p1-p3-wz4").removeClass("active");
+					      		break;
+					      	case 2:
+					      		$(".p1-pic2").removeClass("active");
+					      		$(".p1-pic3").removeClass("active");
+					      		$(".p1-p1-pic3").removeClass("active");
+					      		$(".z-p1-p2-wz1").addClass("active");
+					      		$(".z-p1-p2-wz2").addClass("active");
+					      		$(".z-p1-p3-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz3").removeClass("active");
+					      		$(".z-p1-p3-wz4").removeClass("active");
+					      		break;
+					      	case 3:
+					      		$(".p1-pic2").removeClass("active");
+					      		$(".p1-pic3").removeClass("active");
+					      		$(".p1-p1-pic3").removeClass("active");
+					      		$(".z-p1-p2-wz1").removeClass("active");
+					      		$(".z-p1-p2-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz2").addClass("active");
+					      		$(".z-p1-p3-wz3").addClass("active");
+					      		$(".z-p1-p3-wz4").addClass("active");
+					      		break;
+					      	case 4:
+					      		$(".p1-pic2").addClass("active");
+					      		$(".p1-pic3").addClass("active");
+					      		$(".p1-p1-pic3").addClass("active");
+					      		$(".z-p1-p2-wz1").removeClass("active");
+					      		$(".z-p1-p2-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz2").removeClass("active");
+					      		$(".z-p1-p3-wz3").removeClass("active");
+					      		$(".z-p1-p3-wz4").removeClass("active");
+					      		break;
+					      	default:
+					      		break;
+					      }
+					    },
+					    onSlideChangeEnd: function(swiper){
+					      switch(swiper.activeIndex){
+					      	case 0:
+					      		$(".z-p1-p3-wz2").addClass("active");
+					      		$(".z-p1-p3-wz3").addClass("active");
+					      		$(".z-p1-p3-wz4").addClass("active");
+					      		break;
+					      	case 1:
+					      		$(".p1-pic2").addClass("active");
+					      		$(".p1-pic3").addClass("active");
+					      		$(".p1-p1-pic3").addClass("active");
+					      		break;
+					      	case 2:
+					      		$(".z-p1-p2-wz1").addClass("active");
+					      		$(".z-p1-p2-wz2").addClass("active");
+					      		break;
+					      	case 3:
+					      		$(".z-p1-p3-wz2").addClass("active");
+					      		$(".z-p1-p3-wz3").addClass("active");
+					      		$(".z-p1-p3-wz4").addClass("active");
+					      		break;
+					      	case 4:
+					      		$(".p1-pic2").addClass("active");
+					      		$(".p1-pic3").addClass("active");
+					      		$(".p1-p1-pic3").addClass("active");
+					      		break;
+					      	default:
+					      		break;
+					      }
+					    },
+	                });
+	            </script>
+	            <!-- 首页banner图 -->
+			</div>
+		</div>
+
+		<div  class="page page2" style="background:url(images/section2.jpg) no-repeat center center;background-size: cover ;">
+			<div class="contain">
+				<div class="z-p2-con">
+			        <p class="text1"><img src="images/p2-s.png"></p>
+			        <p class="text2"><img src="images/p2-z.png"></p>
+			        <p class="text3">
+		        		<a href="#">一个新闻HELE好的你所吧...</a>
+		        		<a href="#">颜色值的数字。一个 RGB颜色值由三个两位十六进制数字组成...</a>
+			        </p>
+			        <p class="text4"><a href="xinwenzhongxin.html"><img src="images/p2-x.png"></a></p>
+			    </div>
+	            <p class="news">
+	                <span class="news_bg"></span>
+	                <img src="images/news_arrow.png">
+	                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+	            </p>
+			</div>
+		</div>
+
+		<div  class="page page3" style="background:url(images/cp.jpg) no-repeat bottom center;background-size: cover ;">
+			<div class="contain">
+				<div class="z-p3-con">
+					<div class="z-p3-swraper">
+				    	<div class="z-p3-pic001">
+				    		<img src="images/z-opct.png">
+				    	</div>
+			    		<div class="z-p3-wz">
+			    			<h1>我们的产品</h1>
+			    		</div>
+				    </div>
+				    <div class="z-p3-zwraper">
+				    	<div class="z-pro-wraper">
+			    			<div class="z-pro clearfix">
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>企业级网站群</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>政府移动应用</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>网站管理系统</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>政务运维平台</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>单点登录系统</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>数据备份系统</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>信息化服务</h2>
+			    				</a>
+			    				<a href="" class="z-pro-item">
+			    					<img src="images/z-pct-bg.png">
+			    					<h2>无障碍系统</h2>
+			    				</a>
+			    			</div>
+			    		</div>
+			    		<a href="chanpin.html" class="redm">
+			    			<img src="images/z-p2-more.png" alt="">
+			    		</a>
+				    </div>
+				</div>
+			    <p class="news">
+	                <span class="news_bg"></span>
+	                <img src="images/news_arrow.png">
+	                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+	            </p>
+			</div>
+		</div>
+
+		<div  class="page page4" style="background:url(images/section6.jpg) no-repeat center center;background-size: cover ;">
+			<div class="contain">
+				<div class="bg61"></div>
+				<div class="z-p4con">
+					<a class="z-p4-item z-p4-item0 z-p4-item00" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-bzy.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<a class="z-p4-item z-p4-item0 z-p4-item00" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-cd.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<a class="z-p4-item z-p4-item0" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-dx.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<a class="z-p4-item z-p4-item00" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-gx.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<a class="z-p4-item z-p4-item00" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-qz.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<a class="z-p4-item" href="">
+						<div class="z-p4-item1">
+							<img class="z-p4-item1-img0" src="images/z-p4-bg.png">
+							<img class="z-p4-item1-img" src="images/z-ch-jy.jpg">
+							<div class="z-p4-item2">
+								<img src="images/search.png">
+							</div>
+						</div>
+					</a>
+					<div style="clear: both;height: 1px;"></div>
+					<a class="p4-more" href="anli.html">
+						<img src="images/p2-x.png">
+					</a>
+				</div>
+				<p class="news znews">
+	                <span class="news_bg" style="background: #28B3F3;"></span>
+	                <img src="images/news_arrow2.png">
+	                <a href="xinwenzhongxin.html" style="color:#2BB4F4;"><span class="news_zi">news/新闻动态</span></a>
+	            </p>
+			</div>
+		</div>
+
+		<div  class="page page5" style="background:url(images/fw.jpg) no-repeat center center;background-size: cover ;">
+			<div class="contain">
+				<div class="z-p5-ser-wraper">
+			    	<div class="z-p5-ser-txt-wraper">
+			    		<h1>倾听用户的声音</h1>
+			    		<p>成都容海秉承“立足创新， 诚信服务，真诚合作，共同发展”的作风，不仅向客户提供高品质、高性能的产品，同时还以强大的技术支持和超前的服务理念赢得客户的信赖。多听听用户的声音，重视一下用户的产品体验，产品出来并不代表结束，而是重新开始，听听用户的声音，给自己一点鞭策，只会让自己的产品之路走的更快，理远。</p>
+			    		<a href="kefu.html">了解更多>></a>
+			    		<div class="z-p5-jg" style="clear: both;height: 7rem;"></div>
+			    		<div class="z-p5-pic">
+					    	<img class="z-p5-pic1" src="images/z-zxyq.png" alt="">
+					    	<img class="z-p5-pic2" src="images/z-hrqq.png" alt="">
+					    </div>
+			    	</div>
+			    	<div class="z-p5-ser-item-wraper">
+			    		<div class="z-p5-ser-item clearfix">
+			    			<img src="images/z-fw-lm.jpg">
+			    			<div style="height: 0.5rem;"></div>
+			    			<p>栏目的快速查找</p>
+			    			<a href="">查看详情</a>
+			    		</div>
+			    		<div class="z-p5-ser-item clearfix">
+			    			<img src="images/z-fw-ksh.jpg">
+			    			<div style="height: 0.5rem;"></div>
+			    			<p>可视化编辑器中表格的智<br>能格式化说明</p>
+			    			<a href="">查看详情</a>
+			    		</div>
+			    		<div class="z-p5-ser-item clearfix">
+			    			<img src="images/z-fw-sp.jpg">
+			    			<div style="height: 0.5rem;"></div>
+			    			<p>站群视频上传的注意事项</p>
+			    			<a href="">查看详情</a>
+			    		</div>
+			    	</div>
+			    </div>
+			    <p class="news">
+	                <span class="news_bg"></span>
+	                <img src="images/news_arrow.png">
+	                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+	            </p>
+			</div>
+		</div>
+		<div  class="page page6" style="background:url(images/section8.jpg) no-repeat bottom center;background-size: cover ;">
+			<div class="contain">
+				<p class="news znews">
+	                <span class="news_bg" style="background: #28B3F3;"></span>
+	                <img src="images/news_arrow2.png">
+	                <a href="xinwenzhongxin.html" style="color:#2BB4F4;"><span class="news_zi">news/新闻动态</span></a>
+	            </p>
+				<div class="ys-contain">
+					<img src="images/box6.png">
+					<p class="ys-b6_p1">多一份方案,多一个参数。<br>
+					预约销售工程师面对面进行沟通
+					<br>
+					总有益处
+					</p>
+					<a href="lianxiwomen.html"><img src='images/ysp2-x.png'/></a>
+				</div>
+				<div class="ys-bg82"></div>
+				<div class="ys-bg83"></div>
+				<div class="ys-bg84"></div>
+			</div>
+		</div>
+	</div>
+	<ul id="navBar" style="display: none;">
+		<li class="nav-btn"></li>
+		<li class="nav-btn"></li>
+		<li class="nav-btn"></li>
+		<li class="nav-btn"></li>
+		<li class="nav-btn"></li>
+		<li class="nav-btn"></li>
+	</ul>
+	<div id="z-navBtn" style="display: block;">
+		<ul class="z-nav">
+			<li onclick="go(0)" class="z-navBtn z-navBtn0">首页</li>
+			<li onclick="go(1)" class="z-navBtn z-navBtn1">资讯</li>
+			<li onclick="go(2)" class="z-navBtn z-navBtn2">产品</li>
+			<li onclick="go(3)" class="z-navBtn z-navBtn3">案例</li>
+			<li onclick="go(4)" class="z-navBtn z-navBtn4">服务</li>
+			<li onclick="go(5)" class="z-navBtn z-navBtn5">我们</li>
+		</ul>
+	</div>
+	<script>
+		$(document).mousemove(function (e) {
+			var MX=e.pageX;
+			var nav1 = $("#navBar");
+		  	var nav2 = $("#z-navBtn");
+		  	if (MX < 140) {
+		  		nav2.addClass('active');
+		  		nav2.removeClass('default');
+		  		nav1.fadeOut(300);
+		  	} else {
+		  		nav1.fadeIn(800);
+		  		nav2.removeClass('active');
+		  		nav2.addClass('default');
+		  	}
+		})
+	</script>
+	<script type="text/javascript">
+		var runPage;
+		function go(index){
+			runPage.go(index);
+		}
+		runPage = new FullPage({
+			id: 'pageContain',
+			slideTime: 800,
+			effect: {
+				transform: {
+					translate: 'Y',
+					scale: [0, 1],
+					rotate: [0, 0]
+				},
+				opacity: [0, 1]
+			},
+			mode: 'wheel,touch,nav:navBar',
+			easing: 'ease',
+			callback: function(index){
+				switch(index){
+					case 0:
+						$(".z-p3-swraper").removeClass("hover");
+						$(".z-p3-zwraper").removeClass("hover");
+						$(".z-p2-con .text1").removeClass("hover");
+						$(".z-p2-con .text2").removeClass("hover");
+						$(".z-p2-con .text3").removeClass("hover");
+						$(".z-p2-con .text4").removeClass("hover");
+						$(".z-navBtn0").addClass("active");
+						$(".z-navBtn1").removeClass("active");
+						$(".z-navBtn2").removeClass("active");
+						$(".z-navBtn3").removeClass("active");
+						$(".z-navBtn4").removeClass("active");
+						$(".z-navBtn5").removeClass("active");
+						$(".bg61").removeClass("active");
+						$(".z-p4con").removeClass("active");
+						$(".z-p5-ser-txt-wraper h1").removeClass("active");
+						$(".z-p5-ser-txt-wraper p").removeClass("active");
+						$(".z-p5-ser-txt-wraper a").removeClass("active");
+						$(".z-p5-ser-item").removeClass("active");
+						$('.ys-bg82').removeClass("active");
+						$('.ys-bg83').removeClass("active");
+						$('.ys-bg84').removeClass("active");
+						$('.ys-b6_p1').removeClass("active");
+						$('.ys-contain img').removeClass("active");
+						break;
+					case 1:
+						$(".z-p3-swraper").removeClass("hover");
+						$(".z-p3-zwraper").removeClass("hover");
+						$(".z-p2-con .text1").addClass("hover");
+						$(".z-p2-con .text2").addClass("hover");
+						$(".z-p2-con .text3").addClass("hover");
+						$(".z-p2-con .text4").addClass("hover");
+						$(".z-navBtn0").removeClass("active");
+						$(".z-navBtn1").addClass("active");
+						$(".z-navBtn2").removeClass("active");
+						$(".z-navBtn3").removeClass("active");
+						$(".z-navBtn4").removeClass("active");
+						$(".z-navBtn5").removeClass("active");
+						$(".bg61").removeClass("active");
+						$(".z-p4con").removeClass("active");
+						$(".z-p5-ser-txt-wraper h1").removeClass("active");
+						$(".z-p5-ser-txt-wraper p").removeClass("active");
+						$(".z-p5-ser-txt-wraper a").removeClass("active");
+						$(".z-p5-ser-item").removeClass("active");
+						$('.ys-bg82').removeClass("active");
+						$('.ys-bg83').removeClass("active");
+						$('.ys-bg84').removeClass("active");
+						$('.ys-b6_p1').removeClass("active");
+						$('.ys-contain img').removeClass("active");
+						break;
+					case 2:
+						$(".z-p3-swraper").addClass("hover");
+						$(".z-p3-zwraper").addClass("hover");
+						$(".z-p2-con .text1").removeClass("hover");
+						$(".z-p2-con .text2").removeClass("hover");
+						$(".z-p2-con .text3").removeClass("hover");
+						$(".z-p2-con .text4").removeClass("hover");
+						$(".z-navBtn0").removeClass("active");
+						$(".z-navBtn1").removeClass("active");
+						$(".z-navBtn2").addClass("active");
+						$(".z-navBtn3").removeClass("active");
+						$(".z-navBtn4").removeClass("active");
+						$(".z-navBtn5").removeClass("active");
+						$(".bg61").removeClass("active");
+						$(".z-p4con").removeClass("active");
+						$(".z-p5-ser-txt-wraper h1").removeClass("active");
+						$(".z-p5-ser-txt-wraper p").removeClass("active");
+						$(".z-p5-ser-txt-wraper a").removeClass("active");
+						$(".z-p5-ser-item").removeClass("active");
+						$('.ys-bg82').removeClass("active");
+						$('.ys-bg83').removeClass("active");
+						$('.ys-bg84').removeClass("active");
+						$('.ys-b6_p1').removeClass("active");
+						$('.ys-contain img').removeClass("active");
+						break;
+					case 3:
+						$(".z-p3-swraper").removeClass("hover");
+						$(".z-p3-zwraper").removeClass("hover");
+						$(".z-p2-con .text1").removeClass("hover");
+						$(".z-p2-con .text2").removeClass("hover");
+						$(".z-p2-con .text3").removeClass("hover");
+						$(".z-p2-con .text4").removeClass("hover");
+						$(".z-navBtn0").removeClass("active");
+						$(".z-navBtn1").removeClass("active");
+						$(".z-navBtn2").removeClass("active");
+						$(".z-navBtn3").addClass("active");
+						$(".z-navBtn4").removeClass("active");
+						$(".z-navBtn5").removeClass("active");
+						$(".bg61").addClass("active");
+						$(".z-p4con").addClass("active");
+						$(".z-p5-ser-txt-wraper h1").removeClass("active");
+						$(".z-p5-ser-txt-wraper p").removeClass("active");
+						$(".z-p5-ser-txt-wraper a").removeClass("active");
+						$(".z-p5-ser-item").removeClass("active");
+						$('.ys-bg82').removeClass("active");
+						$('.ys-bg83').removeClass("active");
+						$('.ys-bg84').removeClass("active");
+						$('.ys-b6_p1').removeClass("active");
+						$('.ys-contain img').removeClass("active");
+						break;
+					case 4:
+						$(".z-p3-swraper").removeClass("hover");
+						$(".z-p3-zwraper").removeClass("hover");
+						$(".z-p2-con .text1").removeClass("hover");
+						$(".z-p2-con .text2").removeClass("hover");
+						$(".z-p2-con .text3").removeClass("hover");
+						$(".z-p2-con .text4").removeClass("hover");
+						$(".z-navBtn0").removeClass("active");
+						$(".z-navBtn1").removeClass("active");
+						$(".z-navBtn2").removeClass("active");
+						$(".z-navBtn3").removeClass("active");
+						$(".z-navBtn4").addClass("active");
+						$(".z-navBtn5").removeClass("active");
+						$(".bg61").removeClass("active");
+						$(".z-p4con").removeClass("active");
+						$(".z-p5-ser-txt-wraper h1").addClass("active");
+						$(".z-p5-ser-txt-wraper p").addClass("active");
+						$(".z-p5-ser-txt-wraper a").addClass("active");
+						$(".z-p5-ser-item").addClass("active");
+						$('.ys-bg82').removeClass("active");
+						$('.ys-bg83').removeClass("active");
+						$('.ys-bg84').removeClass("active");
+						$('.ys-b6_p1').removeClass("active");
+						$('.ys-contain img').removeClass("active");
+						break;
+					case 5:
+						$(".z-p3-swraper").removeClass("hover");
+						$(".z-p3-zwraper").removeClass("hover");
+						$(".z-p2-con .text1").removeClass("hover");
+						$(".z-p2-con .text2").removeClass("hover");
+						$(".z-p2-con .text3").removeClass("hover");
+						$(".z-p2-con .text4").removeClass("hover");
+						$(".z-navBtn0").removeClass("active");
+						$(".z-navBtn1").removeClass("active");
+						$(".z-navBtn2").removeClass("active");
+						$(".z-navBtn3").removeClass("active");
+						$(".z-navBtn4").removeClass("active");
+						$(".z-navBtn5").addClass("active");
+						$(".bg61").removeClass("active");
+						$(".z-p4con").removeClass("active");
+						$(".z-p5-ser-txt-wraper h1").removeClass("active");
+						$(".z-p5-ser-txt-wraper p").removeClass("active");
+						$(".z-p5-ser-txt-wraper a").removeClass("active");
+						$(".z-p5-ser-item").removeClass("active");
+						$('.ys-bg82').addClass("active");
+						$('.ys-bg83').addClass("active");
+						$('.ys-bg84').addClass("active");
+						$('.ys-b6_p1').addClass("active");
+						$('.ys-contain img').addClass("active");
+						break;
+					default:
+						break;
+				}
+			}
+			
+		});
+	</script>
+</div>
+<div id="zie">
+	<div id="wrapper">
+		<div id="banner">
+			<ul class="imgList">
+				<li>
+					<img class="imgList-Pic" src="images/z-ie-p1-1.jpg" alt="">
+					<p class="news">
+		                <span class="news_bg"></span>
+		                <img src="images/news_arrow.png">
+		                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+		            </p>
+				</li>
+				<li>
+					<img class="imgList-Pic" src="images/z-ie-p1-2.jpg" alt="">
+					<p class="news">
+		                <span class="news_bg"></span>
+		                <img src="images/news_arrow.png">
+		                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+		            </p>
+				</li>
+				<li>
+					<img class="imgList-Pic" src="images/z-ie-p1-3.jpg" alt="">
+					<p class="news">
+		                <span class="news_bg"></span>
+		                <img src="images/news_arrow.png">
+		                <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+		            </p>
+				</li>
+			</ul>
+			<img src="images/z-qyy.png" width="40px" height="40px" id="prev">
+      		<img src="images/z-xyy.png" width="40px" height="40px" id="next">
+		</div>
+		<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+	</div>
+    <div class="z-ie-p2">
+    	<img class="z-ie-p2-Im" src="images/section2.jpg" alt="">
+    	<div class="z-ie-p2-con">
+    		<p class="zie2-1"><img src="images/p2-s.png"></p>
+	        <p class="zie2-2"><img src="images/p2-z.png"></p>
+	        <p class="zie2-3">
+        		<a href="#">一个新闻HELE好的你所吧...</a>
+        		<a href="#">颜色值的数字。一个 RGB颜色值由三个两位十六进制数字组成...</a>
+	        </p>
+	        <p class="zie2-4"><a href=""><img src="images/p2-x.png"></a></p>
+    	</div>
+    	<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+		<p class="news">
+            <span class="news_bg"></span>
+            <img src="images/news_arrow.png">
+            <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+        </p>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="z-ie-p3">
+    	<p class="news">
+            <span class="news_bg"></span>
+            <img src="images/news_arrow.png">
+            <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+        </p>
+		<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+    	<img class="z-ie-p3-Im" src="images/cp.jpg" alt="">
+    	<div class="z-ie-p3-logo">
+    		<img src="images/z-opct.png" alt="">
+    	</div>
+    	<div class="z-ie-p3-logo1">
+    		<img src="images/z-ie-p3-logo1.png" alt="">
+    	</div>
+    	<div class="z-ie-p3-con clearfix">
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			企业级网站群
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			政府移动应用
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			网站管理系统
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item">
+    			政务运维平台
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			单点登录系统
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			数据备份系统
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item mr50">
+    			信息化服务
+    		</a>
+    		<a href="" style="display: block;" class="z-ie-p3-item">
+    			无障碍系统
+    		</a>
+	    	<div style="clear:both;"></div>
+	    	<a href="" class="z-ie-p3-gd">
+	    		<img src="images/z-p2-more.png" alt="">
+	    	</a>
+    	</div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="z-ie-p4">
+    	<p class="news">
+            <span class="news_bg"></span>
+            <img src="images/news_arrow.png">
+            <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+        </p>
+		<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+    	<img class="z-ie-p4-Im" src="images/al.jpg" alt="">
+    	<div class="z-ie-p4-con-wraper">
+    		<div class="z-ie-p4-con">
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<a href="" style="display: block" class="z-ie-p4-item">
+    				<img src="images/z-ch-cd.jpg" alt="">
+    			</a>
+    			<div style="clear:both;"></div>
+    			<a class="p4-more" href="">
+					<img src="images/p2-x.png">
+				</a>
+    		</div>
+    		<div style="clear:both;"></div>
+    	</div>
+    	
+    </div>
+    <div style="clear:both;"></div>
+    <div class="z-ie-p5">
+    	<p class="news">
+            <span class="news_bg"></span>
+            <img src="images/news_arrow.png">
+            <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+        </p>
+		<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+    	<img class="z-ie-p5-Im" src="images/fw.jpg" alt="">
+    	<div class="z-ie-p5-con">
+    		<div class="z-ie-p5-txt">
+    			<h1>倾听用户的声音</h1>
+    			<div style="clear:both;height:40px;"></div>
+    			<p>成都容海秉承“立足创新， 诚信服务，真诚合作，共同发展”的作风，不仅向客户提供高品质、高性能的产品，同时还以强大的技术支持和超前的服务理念赢得客户的信赖。多听听用户的声音，重视一下用户的产品体验，产品出来并不代表结束，而是重新开始，听听用户的声音，给自己一点鞭策，只会让自己的产品之路走的更快，理远。</p>
+    			<div style="clear:both;height:14px;"></div>
+    			<a href="">了解更多>></a>
+    		</div>
+    		<div class="z-ie-p5-Pic">
+    			<img src="images/z-fw-logo.png" alt="">
+    		</div>
+    		<div style="clear:both;"></div>
+    		<div class="z-ie-p5-item">
+    			<img src="images/z-fw-lm.jpg" alt="">
+    			<p>栏目的快速查找</p>
+    			<a href=""></a>
+    		</div>
+    		<div class="z-ie-p5-item">
+    			<img src="images/z-fw-ksh.jpg" alt="">
+    			<p>可视化编辑器中表格的智<br>能格式化的说明</p>
+    			<a href=""></a>
+    		</div>
+    		<div class="z-ie-p5-item" style="margin-right: 0px;">
+    			<img src="images/z-fw-sp.jpg" alt="">
+    			<p>站群进行视频上传的注意事项</p>
+    			<a href=""></a>
+    		</div>
+    	</div>
+    </div>
+    <div class="z-ie-p6">
+    	<p class="news">
+            <span class="news_bg"></span>
+            <img src="images/news_arrow.png">
+            <a href="xinwenzhongxin.html" style="color:white;"><span class="news_zi">news/新闻动态</span></a>
+        </p>
+		<div class="z-ie-nav">
+			<a class="z-ie-nav-item z-ie-pa1" href="javascript:void(0);">
+				<span></span>
+				<div>首页</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa2" href="javascript:void(0);">
+				<span></span>
+				<div>资讯</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa3" href="javascript:void(0);">
+				<span></span>
+				<div>产品</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa4" href="javascript:void(0);">
+				<span></span>
+				<div>案例</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa5" href="javascript:void(0);">
+				<span></span>
+				<div>服务</div>
+				<span></span>
+			</a>
+			<a class="z-ie-nav-item z-ie-pa6" href="javascript:void(0);">
+				<span></span>
+				<div>我们</div>
+				<span></span>
+			</a>
+		</div>
+    	<img class="z-ie-p6-Im" src="images/z-p6-lxwm.jpg" alt="">
+		<div class="zie6-con">
+			<img src="images/box6.png" class="zie6-1">
+			<p>多一份方案,多一个参数。<br>预约销售工程师面对面进行沟通<br>总有益处</p>
+			<a href="">
+    			<img src="images/ysp2-x.png">
+			</a>
+		</div>
+    </div>
+</div>
+</body>
+</html>
